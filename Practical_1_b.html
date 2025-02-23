@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical_1_B</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            animation: moveSquare 4s linear infinite;
+        }
+
+        @keyframes moveSquare {
+            0% { left: 50px; top: 50px; }   /* Start (Top-Left) */
+            25% { left: 300px; top: 50px; }  /* Move Right */
+            50% { left: 300px; top: 300px; } /* Move Down */
+            75% { left: 50px; top: 300px; }  /* Move Left */
+            100% { left: 50px; top: 50px; }  /* Move Up (Back to Start) */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

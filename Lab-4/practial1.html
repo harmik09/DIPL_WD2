@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 95vh;
+            border: 2px solid gray;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .header {
+            height: 20%;
+            border: 2px solid gray;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+
+        .main_heading {
+            font-weight: 500;
+            font-size: 30px;
+            margin: 0px;
+        }
+
+        .content {
+            height: 60%;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .main_content {
+            float: left;
+        }
+
+        .div-1 {
+            width: 70%;
+            float: left;
+        }
+
+        .div-2 {
+            width: 30%;
+            border: 2px solid gray;
+            padding: 10px;
+            float: left;
+        }
+
+        .div-inner{
+            float: left;
+        }
+        .heading {
+            font-weight: 600;
+            font-size: 5px;
+        }
+
+        p {
+            font-size: 1px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-top: 0em;
+        }
+
+        hr {
+            height: 2px;
+            width: 950px;
+            background-color: gray;
+        }
+
+        .bottom_content {
+            float: left;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .block_quote {
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            background-color: #E4E0E1;
+            width: 90%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 5px;
+            float: left;
+        }
+
+        .footer {
+            height: 10%;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Header here -->
+        <div class="header">
+            <p class="main_heading">site title</p>
+        </div>
+
+        <!-- Content here -->
+        <div class="content">
+            <!-- Main content -->
+            <div class="main_content">
+                <!-- Div 1 -->
+                <div class="div-1">
+                    <div class="div">
+                        <p class="heading">centerColumn</p>
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Officiis quo itaque repellendus.
+                            Facere, perferendis. Earum fugit ipsa nostrum nulla,
+                            repudiandae, facilis molestias totam ullam eveniet consequuntur
+                            voluptatibus natus! Sint, delectus?
+                        </p>
+                    </div>
+                    <div class="div-inner">
+                        <p class="heading">Header 2</p>
+                        <a href="">Link Item</a>
+                        <ul>
+                            <li>Link Item</li>
+                            <li>Link Item</li>
+                            <li>Link Item
+                                <ul>
+                                    <li>Link Item</li>
+                                    <li>Link Item</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Div 2 -->
+                <div class="div-2">
+                    <p class="heading">fauxRightColumn</p>
+                    <a href="">Link Item</a> <br>
+                    <a href="">Link Item</a> <br>
+                    <a href="">Link Item</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quo odio error fugiat voluptates laborum sapiente recusandae
+                        cumque
+                    </p>
+                </div>
+            </div>
+
+            <!-- Block quote -->
+            <div class="bottom_content">
+                <div class="block_quote">
+                    blockquote <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo odio error fugiat voluptates laborum sapiente recusandae
+                    cumque
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer here -->
+        <div class="footer">
+            <div class="div">
+                <a href="">XHTML</a> &#8739;
+                <a href="">CSS</a> &#8739;
+                <a href="">WCAG</a> &#8739;
+                a href="">The CSS Tinderbox</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

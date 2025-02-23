@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{  /* pseudo element */
+            font-size: large;
+            color: red;
+            font-weight: bold;
+        }
+
+        p::selection{    /* pseudo element */
+            background-color: yellow;
+        }
+
+        h5:hover{        /* pseudo class */
+            background-color:aliceblue;
+            color:gray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque eum repellat quas voluptatem adipisci, itaque
+        delectus maxime ipsam est. Eveniet, numquam! Porro corporis necessitatibus minima doloremque itaque nemo neque!
+    </p>
+
+    <h5>This sentence change style when u over the mouse</h5>
+</body>
+
+</html>
+
+
+<!-- psuedo class : https://www.w3schools.com/cssref/css_ref_pseudo_classes.php -->
+<!-- psuedo element : https://www.w3schools.com/cssref/css_ref_pseudo_elements.php -->

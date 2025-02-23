@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            height: 100vh;
+        }
+        .container{
+            width: 95%;
+            height: 95vh;
+            border: 1px solid black;
+            margin: auto;
+            position: relative;
+            animation-name: bg;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+        }
+        .round{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50px;
+            position: absolute;
+            animation-name: roundAni;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 2;
+            animation-timing-function: linear;
+        }
+        @keyframes bg {
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+        @keyframes roundAni {
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: calc(100% - 100px);
+                top: 0px;
+            }
+            50%{
+                left: calc(100% - 100px);
+                top: calc(100% - 100px);
+            }
+            75%{
+                left: 0px;
+                top: calc(100% - 100px);
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="round"></div>
+    </div>
+</body>
+</html>

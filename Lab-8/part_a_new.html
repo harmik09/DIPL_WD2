@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Practical_1</title> 
+    <style> 
+        body { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        } 
+ 
+        /* Linear Gradient */ 
+        .linear-gradient-box { 
+            width: 400px; 
+            height: 200px; 
+            color: white; 
+            background: linear-gradient(#27445D, #E5989B); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 20px; 
+            margin: 20px; 
+            border-radius: 10px; 
+        } 
+ 
+        /* Radial Gradient */ 
+        .radial-gradient-box { 
+            width: 400px; 
+            height: 200px; 
+            background: radial-gradient(#143D60, #A6F1E0); 
+            color: white; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 20px; 
+            margin: 20px; 
+            border-radius: 10px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="linear-gradient-box">Linear Gradient</div> 
+    <div class="radial-gradient-box">Radial Gradient</div>
+</body> 
+</html> 
+ 
+<!-- Note: 
+1)Linear 
+    linear-gradient(to right, red, yellow) 
+    -to right -> left to right 
+    -to left -> right to left 
+    -to top -> bottom to top 
+    -to bottom -> top to bottom 
+    -45deg -> diagonal 
+2) Radial 
+    radial-gradient( red,#143D60, #A6F1E0) 
+    -ellipse(default) 
+    -circle 
+3)conic-gradient(red, yellow, green, blue) 
+4)Repeating 
+    -repeating-linear-gradient(to right, red, yellow 10px) 
+    -repeating-radial-gradient(circle, blue, white 10px) 
+    -repeating-conic-gradient(red 0deg 30deg, yellow 30deg 60deg) --> 

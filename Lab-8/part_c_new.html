@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Practical_3</title> 
+    <style> 
+        *{ 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+'Lucida Sans', Arial, sans-serif; 
+        } 
+         
+        /* First Letter Styling */ 
+        .styled-paragraph::first-letter { /* pseudo element */
+            font-size: 30px; 
+            font-weight: bold; 
+            color: #3674B5; 
+        } 
+ 
+        /* Change Background Color on Text Selection */ 
+        .styled-paragraph::selection { /* pseudo element */
+            background-color: yellow; 
+            color: #F4F8D3; 
+        } 
+ 
+        /* Hover Effect on Button */ 
+        .hover-effect { 
+            padding: 10px 20px; 
+            font-size: 18px; 
+            background-color: #3B6790; 
+            border-radius: 25px; 
+            color: white; 
+            border: none; 
+            transition: background 0.5s ease-in-out; 
+        } 
+        .hover-effect:hover { /* pseudo class */
+            background-color: #EFB036; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h3>CSS Special Effects</h3> 
+ 
+    <p class="styled-paragraph"> 
+        This is an example paragraph. The first letter is styled differently to stand 
+out.  
+        Also, when you select any text in this paragraph, the background color will 
+change to yellow. 
+    </p> 
+ 
+    <button class="hover-effect">Hover over me</button> 
+</body> 
+</html> 
+ 
+<!-- Note: 
+1)Pseudo-Class(:) -> It selects elements based on their state or user interaction. 
+    Ex- :hover, :focus, :first-child, :nth-child(2),... 
+2)Pseudo-Element (::) -> It allows you to style specific parts of an element. 
+    Ex- ::first-letter, ::first-line, ::before, ::after, ::selection,... --> 

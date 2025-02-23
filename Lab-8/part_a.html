@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .first{
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            background-image: linear-gradient(red ,yellow );
+        }
+      
+        .second{
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            background-image: radial-gradient(red,green,yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+</body>
+
+</html>

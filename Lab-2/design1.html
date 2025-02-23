@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Design</title>
+    <style>
+        .header {
+            width: 93rem;
+            height: 10vh;
+            display: flex;
+            font-size: xx-large;
+        }
+
+        .logo {
+            width: 15rem;
+            height: full;
+            border: 3px solid orange;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        nav {
+            width: 85rem;
+            align-items: center;
+            border: 3px solid navy;
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        
+
+        .container {
+            width: 93rem;
+            height: 80vh;
+            border: 3px solid yellow;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        aside {
+            display: absolute;
+            justify-content: center;
+        }
+
+        aside div {
+            display: flex;
+            border: 3px solid black;
+            margin: 20px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 15rem;
+            height: 8vh;
+            font-size: xx-large;
+        }
+
+        .main {
+            width: 100rem;
+            height: 80vh;
+            border: 3px solid green;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .inner1 {
+            border: 3px solid purple;
+            height: 34vh;
+            width: 68rem;
+            margin-left: 52px;
+            position: absolute;
+            display: flex;
+            top: 2rem;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        .dotboxleft {
+            border: 3px dotted red;
+            left: 0rem;
+            height: 25vh;
+            width: 30rem;
+            display: flex;
+        }
+
+        .dotboxright {
+            border: 3px dotted red;
+            right: 0rem;
+            height: 25vh;
+            width: 30rem;
+            display: flex;
+        }
+
+        .inner2 {
+            border: 3px solid purple;
+            height: 34vh;
+            width: 68rem;
+            margin-left: 52px;
+            position: absolute;
+            display: flex;
+            bottom: 2rem;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .dotboxleft2 {
+            border: 3px dotted red;
+            height: 25vh;
+            width: 20rem;
+            display: flex;
+        }
+
+        .dotboxmiddle2 {
+            border: 3px dotted red;
+            height: 25vh;
+            width: 20rem;
+            display: flex;
+        }
+
+        .dotboxright2 {
+            border: 3px dotted red;
+            height: 25vh;
+            width: 20rem;
+            display: flex;
+        }
+
+        .footer {
+            width: 93rem;
+            height: 10vh;
+            border: 3px solid blue;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="logo">
+            Logo Here
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <aside>
+            <div>Result</div>
+            <div>Apply</div>
+            <div>Placement</div>
+            <div>Recrutment</div>
+            <div>News</div>
+        </aside>
+        <div class="main">
+            <div class="inner1">
+                <div class="dotboxleft"></div>
+                <div class="dotboxright"></div>
+            </div>
+            <div class="inner2">
+                <div class="dotboxleft2"></div>
+                <div class="dotboxmiddle2"></div>
+                <div class="dotboxright2"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>
